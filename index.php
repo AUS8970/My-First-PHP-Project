@@ -7,13 +7,35 @@
 </head>
 <body>
   <?php
-    // integer number
-    $age = 10;
-    echo "My age is " . $age;
+    // String
+    $name = "John Doe";
 
-    // float number
-    $age = 10.90;
-    echo "My age is " . $age;
+    // Number
+    $age = 25;
+
+    // Boolean
+    $isMale = true;
+
+    // Array
+    $foods = array("Apple", "Banana", "Orange");
+
+    // null
+    $name = null;
+
+    // Object
+    class Phone {
+      var $model;
+      function phoneModel($number) {
+        global $model;
+        $model = $number;
+        echo 'This is a '.$model.' phone';
+      }
+    }
+
+    $apple = new Phone;
+    $apple->phoneModel('iPhone');
+    $samsang = new Phone;
+    $samsang->phoneModel('samsang');
   ?>
 </body>
 </html>
