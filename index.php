@@ -6,10 +6,14 @@
   <title>PHP</title>
 </head>
 <body>
-  <?php 
-    $name = "John";
-    echo "Hello! I'm " . $name; 
-    print "Hello! I'm " . $name;
+  <?php
+    // integer number
+    $age = 10;
+    echo "My age is " . $age;
+
+    // float number
+    $age = 10.90;
+    echo "My age is " . $age;
   ?>
 </body>
 </html>
