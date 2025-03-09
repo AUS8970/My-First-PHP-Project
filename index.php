@@ -6,18 +6,10 @@
   <title>PHP</title>
 </head>
 <body>
-  <?php
-    $name = "Asad Ullah Shamim";
-    echo "Hello! I'm " . $name;
-
-    // Asad Ullah Shamim
-    /* 
-    Asad
-    Ullah
-    Shamim 
-    */
+  <?php 
+    $name = "John";
+    echo "Hello! I'm " . $name; 
+    print "Hello! I'm " . $name;
   ?>
-
-  
 </body>
 </html>
