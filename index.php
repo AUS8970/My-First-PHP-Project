@@ -34,8 +34,6 @@
 
     $apple = new Phone;
     $apple->phoneModel('iPhone');
-    $samsang = new Phone;
-    $samsang->phoneModel('samsang');
   ?>
 </body>
 </html>
