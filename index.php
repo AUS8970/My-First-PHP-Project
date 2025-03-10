@@ -28,12 +28,20 @@
       function phoneModel($number) {
         global $model;
         $model = $number;
-        echo 'This is a '.$model.' phone';
+        echo 'This is a '.$model.' phone' . '<br>';
       }
     }
 
     $apple = new Phone;
     $apple->phoneModel('iPhone');
+
+    // Use String
+    echo 'I Love PHP' . '<br>';
+    echo strlen('I Love PHP'). '<br>';
+    echo str_word_count('I Love PHP') . '<br>';
+    echo strrev('I Love PHP') . '<br>';
+    echo strpos('I Love PHP', 'PHP') . '<br>';
+    echo str_replace( 'PHP', 'Java', 'I Love PHP') . '<br>';
   ?>
 </body>
 </html>
