@@ -41,7 +41,17 @@
     echo str_word_count('I Love PHP') . '<br>';
     echo strrev('I Love PHP') . '<br>';
     echo strpos('I Love PHP', 'PHP') . '<br>';
-    echo str_replace( 'PHP', 'Java', 'I Love PHP') . '<br>';
+    echo str_replace( 'PHP', 'Java', 'I Love PHP') . '<br>' . '<br>';
+
+
+    // Math
+    echo (pi()) . '<br>';
+    echo (min(0, 150, 30, 20, -8, -200)) . '<br>';
+    echo (max(0, 150, 30, 20, -8, -200)) . '<br>';
+    echo (abs(-6.7)) . '<br>';
+    echo (sqrt(64)) . '<br>';
+    echo (round(5.60)) . '<br>';
+    echo (rand(10, 100)) . '<br>';
   ?>
 </body>
 </html>
