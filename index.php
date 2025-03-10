@@ -7,6 +7,73 @@
 </head>
 <body>
   <?php
+    $date = date('H');
+
+    if($date < '12') {
+      echo 'Good Morning';
+    } elseif ($date < '18') {
+      echo 'Good Afternoon';
+    } else {
+      echo 'Good Evening';
+    }
+
+    echo '<br>';
+
+    switch('yellow') {
+      case 'red':
+        echo 'Your favorite color is red';
+        break;
+      case 'blue':
+        echo 'Your favorite color is blue';
+        break;
+      case 'green':
+        echo 'Your favorite color is green';
+        break;
+      default:
+        echo 'Your favorite color is something else';
+    }
+
+    echo '<br>';
+
+    $x = 5;
+
+    while($x <= 10) {
+      echo 'The number is: ' . $x . '<br>';
+      $x++;
+    };
+
+    echo '<br>';
+
+    do{
+      echo 'The number is: ' . $x . '<br>';
+      $x++;
+    } while($x <= 10);
+
+    echo '<br>';
+
+    for($x = 0; $x <= 10; $x++) {
+      echo 'The number is: ' . $x . '<br>';
+    }
+
+    echo '<br>';
+
+    function test($name) {
+      echo 'Are you ' . $name . '?';
+    }
+
+    test('Asad Ullah Shamim');
+
+    echo '<br>';
+
+    
+  ?>
+
+  <?php ?>
+
+  </br>
+  </br>
+  </br>
+  <?php
     // String
     $name = "John Doe";
 
@@ -51,7 +118,50 @@
     echo (abs(-6.7)) . '<br>';
     echo (sqrt(64)) . '<br>';
     echo (round(5.60)) . '<br>';
-    echo (rand(10, 100)) . '<br>';
+    echo (rand(10, 100)) . '<br>' . '<br>';
+
+
+
+    // Constants
+    define('GREETING', 'Hello Everyone!');
+    echo GREETING . '<br>';
+
+
+
+    // Operators
+    $x = 5;
+    $y = 10;
+
+    // Addition
+    echo $x + $y . '<br>';
+    // Subtraction
+    echo $x - $y . '<br>';
+    // Multiplication
+    echo $x * $y . '<br>';
+    // Division
+    echo $x / $y . '<br>';
+    // Modulus
+    echo $x % $y . '<br>';
+    // Exponential
+    echo $x ** $y . '<br>' . '<br>';
+    // Concatenation
+    // echo $x = $y . '<br>';
+
+
+    // Assignment
+    $x = 5;
+    $y = 10;
+    
+    $x += $y;
+    echo $x . '<br>';
+    $x -= $y;
+    echo $x . '<br>';
+    $x *= $y;
+    echo $x . '<br>';
+    $x /= $y;
+    echo $x . '<br>';
+    $x %= $y;
+    echo $x . '<br>' . '<br>';
   ?>
 </body>
 </html>
